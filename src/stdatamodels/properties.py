@@ -267,7 +267,6 @@ class Node():
         return self._instance
 
 class ObjectNode(Node):
-    @override__dir__
     def __dir__(self):
         return list(self._schema.get('properties', {}).keys())
 
